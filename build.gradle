@@ -6,7 +6,7 @@ buildscript {
         maven { url 'https://github.com/sephiroth74/picasso' }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.12.+'
+        classpath 'com.android.tools.build:gradle:1.0.+'
     }
 }
 
@@ -16,4 +16,9 @@ allprojects {
     }
 }
 
-
+ext {
+    compileSdkVersion = 19
+    buildToolsVersion = "21"
+    minSdkVersion = 10
+    targetSdkVersion = 19
+}
